@@ -60,9 +60,10 @@ void ShowMas(int** a)
     for (int i = 0; i < 9; ++i)
     {
         for (int j = 0; j < 9; ++j)
-            printf("%3d", a[i][j]);
+            printf("_""_%3d""_|", a[i][j]);
         printf("\n\n");
-    }
+     }
+
 }
 
 int main()
@@ -73,6 +74,5 @@ int main()
     InitMas(a);
     Sudoku(a);
     ShowMas(a);
-    getchar();
-    return 0;
+    
 }
